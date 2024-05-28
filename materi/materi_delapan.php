@@ -65,8 +65,8 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="gender" id="gender" checked>
                     <label class="form-check-label" for="gender">
-                        Laki-Laki
-                    </label>
+                    Laki-Laki
+                </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="gender" id="gender" checked>
