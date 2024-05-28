@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas HItung BMI Puji Barata</title>
+    <title>Tugas HItung BMI 1</title>
 </head>
 <body>
     <form action="proses_hitung.php" method="POST">
