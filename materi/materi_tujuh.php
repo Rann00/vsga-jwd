@@ -21,13 +21,8 @@
     .genap {
         background: white;
     }
-
-    td {
-        padding-left: 20px;
-        padding-right: 10px;
-    }
 </style>
-
+    <link rel="stylesheet" href="me/style.css">
 </head>
 <body>
     <h1>Selamat Datang</h1>
