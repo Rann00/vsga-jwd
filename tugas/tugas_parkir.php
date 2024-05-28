@@ -21,18 +21,24 @@
 </head>
 <body>
     <form action="#" method="get">
-        <div class="col-10" style >
-            <label for="product_name" class="form-label">No. Polisi :</label>
-            <input type="text" name="no_polisi"/>
-        <div class="col-10">
-            <label for="product_name" class="form-label">Lama Parkir :</label></label>
-            <input type="number" name="lama_parkir"/>
-        <div class="col-10">
-            <label for="product_name" class="form-label">Tarif :</label>
-            <input type="number" name="tarif"/>
-
-            <input type="submit" name="btnHitung" value="Hitung">
-      
+        <table>
+            <tr>
+            <td><label for="product_name" class="form-label">No. Polisi</label></td>
+            <td>:</td>
+            <td><input type="text" name="no_polisi"/></td>
+            </tr>
+        <tr>
+            <td><label for="product_name" class="form-label">Lama Parkir</label></td>
+            <td>:</td>
+            <td><input type="number" name="lama_parkir"/></td>
+        </tr>
+        <tr>
+            <td><label for="product_name" class="form-label">Tarif</label></td>
+            <td>:</td>
+            <td><input type="number" name="tarif"/></td>
+        </tr>
+            <td><input type="submit" name="btnHitung" value="Hitung"></td>
+            </table>
     <?php 
     if(isset($_GET['btnHitung'])) {
     $lama_parkir =$_GET['lama_parkir'];

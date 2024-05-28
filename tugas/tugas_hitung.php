@@ -7,10 +7,26 @@
 </head>
 <body>
     <form action="proses_hitung.php" method="POST">
-        Nama : <input type="text" name="nama" id="nama"><br>
-        Berat Badan(kg) : <input type="number" name="berat" id="berat"><br>
-        Tinggi Badan(m) : <input type="decimal" name="tinggi" id="tinggi"><br>
-        <input type="submit" value="Hitung">
+        <table>
+        <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td>Berat Badan(kg)</td>
+            <td>:</td>
+            <td><input type="number" name="berat" id="berat"></td>
+        </tr>
+       <tr>
+        <td>Tinggi Badan(m)</td>
+        <td>:</td>
+        <td><input type="decimal" name="tinggi" id="tinggi"></td>
+       </tr>
+       <tr>
+        <td><input type="submit" value="Hitung"></td>
+    </tr>
+        </table>
     </form>
 </body>
 </html>
