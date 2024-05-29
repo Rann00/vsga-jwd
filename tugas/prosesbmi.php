@@ -20,7 +20,9 @@
         </div>
     </nav>
     <!-- END BAGIAN NAVBAR -->
-<?php
+
+    <div class="container-fluid">
+    <?php
     $nama = $_POST['nama'];
     $berat = $_POST['berat'];
     $tinggi = $_POST['tinggi'];
@@ -44,4 +46,5 @@
                 echo $y. "Anda Kurus, Perbanyak Makan";
             }
         }
-    
+    ?>
+    </div>
