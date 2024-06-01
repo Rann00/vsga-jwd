@@ -4,9 +4,10 @@
 
     // mengambil data file json
     $fileDataKaryawan = "data/data_karyawan.json";
-    $isiDataKaryawan = file_get_contents($fileDataKaryawan, true);
+    $isiDataKaryawan = file_get_contents($fileDataKaryawan);
 
     $daftarKaryawan = array();
+    // mengubah data karyawan menjadi ke array associative
     $daftarKaryawan = json_decode($isiDataKaryawan, true);
 
     if(isset($_POST['btnSimpan'])) { // jika btnSimpan di klik
@@ -17,15 +18,17 @@
         $jenisKelamin = $_POST['jeniskelamin'];
         $golongan = $_POST['golongan'];
 
+        // data karyawan yang diinput ke dalam array
         $dataKaryawan = array(
             "nik" => $nik,
             "nama" => $nama,
-            "jeniskelamin" => $jenisKelamin,
+            "jenisKelamin" => $jenisKelamin,
             "golongan" => $golongan
         );
 
         // memasukkan array data karyawan yang baru, ke daftar karyawan sebelumnya
         array_push($daftarKaryawan, $dataKaryawan);
+
         // mengubah array data karyawan ke json format
         $dataYangInginDitulisKeFile = json_encode($daftarKaryawan, JSON_PRETTY_PRINT);
 
@@ -73,7 +76,7 @@
             </div>
             <div class="mb-3">
                 <label for="golongan" class="form-label">Golongan</label>
-                <select class="form-select">
+                <select name="golongan" id="golongan" class="form-select">
                     <?php
                     foreach ($daftarGolongan as $gol) {
                         echo "<option value='$gol'> $gol </option>";
@@ -82,9 +85,9 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <buttom type="submit" class="btn btn-primary" name="btnSimpan" id="btnSimpan">
+                    <button type="submit" class="btn btn-primary" name="btnSimpan" id="btnSimpan">
                         Simpan
-                    </buttom>
+                    </button>
                 </div>
             </form>
             <hr>
@@ -100,12 +103,13 @@
                 <tbody>
                     <?php
                     foreach($daftarKaryawan as $karyawan) {
-                        /*echo "<tr>";
-                        echo <td></td>;
-                        echo <td></td>;
-                        echo <td></td>;
-                        echo <td></td>;
-                        echo "</tr>";*/
+                        echo "<tr>";
+                        echo "<td>". $karyawan['nik']. "</td>";
+                        echo "<td>". $karyawan['nama']. "</td>";
+                        echo "<td>". $karyawan['jenisKelamin']. "</td>";
+                        echo "<td>". $karyawan['golongan']. "</td>";
+                        //echo "<td>". $karyawan['']. "</td>";
+                        echo "</tr>";
                     }
                     ?>
                 </tbody>

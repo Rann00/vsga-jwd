@@ -29,9 +29,14 @@
 
     $example1 = "Nilai BMI Anda Adalah : ";
     $example2 = "Status BMI : ";
+    $example3 = "Berat : $berat Kg";
+    $example4 = "Tinggi : $tinggi Meter";
+
     $bmi = $berat / ($tinggi * $tinggi);
         
     echo $nama . "<br>";
+    echo $example3 . "<br>";
+    echo $example4 . "<br>";
     echo $example1 . $bmi . "<br>";
     getGrade($bmi, $example2);
         
