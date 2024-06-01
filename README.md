@@ -26,3 +26,5 @@ Proyek ini adalah aplikasi sederhana untuk mengelola data mahasiswa. Aplikasi in
 | `data/data_mahasiswa.json`  | File JSON untuk menyimpan data mahasiswa   |
 | `index.php`                 | File PHP utama untuk aplikasi              |
 
+
+README ini mencakup deskripsi proyek, fitur, teknologi yang digunakan, struktur direktori, panduan instalasi dan penggunaan, serta penjelasan kode. Selain itu, terdapat tabel untuk daftar mahasiswa dan pernyataan hak cipta oleh Puji Barata.

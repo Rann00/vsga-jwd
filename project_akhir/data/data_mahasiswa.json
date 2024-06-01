@@ -18,35 +18,5 @@
         "nilai": "91",
         "nilaiMutu": "B",
         "lulus": "Lulus"
-    },
-    {
-        "nim": "",
-        "nama": "",
-        "jenisKelamin": "Laki-Laki",
-        "jurusan": "Sistem dan Teknologi Informasi",
-        "mataKuliah": "Pemrograman Web",
-        "nilai": "91",
-        "nilaiMutu": "A",
-        "lulus": "Lulus"
-    },
-    {
-        "nim": "",
-        "nama": "",
-        "jenisKelamin": "Laki-Laki",
-        "jurusan": "Sistem dan Teknologi Informasi",
-        "mataKuliah": "Metodologi Penelitian",
-        "nilai": "81",
-        "nilaiMutu": "B",
-        "lulus": "Lulus"
-    },
-    {
-        "nim": "",
-        "nama": "",
-        "jenisKelamin": "Laki-Laki",
-        "jurusan": "Sistem dan Teknologi Informasi",
-        "mataKuliah": "Metodologi Penelitian",
-        "nilai": "80",
-        "nilaiMutu": "C",
-        "lulus": "Lulus"
     }
 ]

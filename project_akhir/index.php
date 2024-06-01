@@ -108,6 +108,10 @@
             background-color: #70c0d7;
         }
 
+        ::placeholder {
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
@@ -128,25 +132,25 @@
         <form action="#" method="post" class="row g-3">
             <div class="col-md-5">
                 <label for="nim" class="form-label">NIM</label>
-                <input type="number" name="nim" id="nim" class="form-control">
+                <input type="number" name="nim" id="nim" class="form-control" placeholder="Masukkan NIM Anda" required>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="alamat" class="form-label">Alamat</label>
-                <input type="text" name="alamat" id="alamat" class="form-control">
+                <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Masukkan Alamat Anda" required>
             </div>
             <div class="col-md-5">
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" name="nama" id="nama" class="form-control">
+                <input type="text" name="nama" id="nama" class="form-control" placeholder="Masukkan Nama Anda" required>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="nomorTelpon" class="form-label">Nomor Telpon</label>
-                <input type="integer" name="nomorTelpon" id="nomorTelpon" class="form-control">
+                <input type="integer" name="nomorTelpon" id="nomorTelpon" class="form-control" placeholder="Masukkan No. Telpon Anda" required>
             </div>
             <div class="col-md-5">
                 <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
-                <select name="jenisKelamin" id="jenisKelamin" class="form-select">
+                <select name="jenisKelamin" id="jenisKelamin" class="form-select" required>
                     <?php
                     // menampilkan isi array kedalam combobox
                     foreach($daftarJenisKelamin as $djk) {
@@ -158,16 +162,16 @@
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" name="email" id="email" class="form-control">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Masukkan Email Anda" required>
             </div>
             <div class="col-md-5">
                 <label for="tempatLahir" class="form-label">Tempat Lahir</label>
-                <input type="text" name="tempatLahir" id="tempatLahir" class="form-control">
+                <input type="text" name="tempatLahir" id="tempatLahir" class="form-control" placeholder="Masukkan Tempat Lahir Anda" required>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="jurusan" class="form-label">Jurusan</label>
-                 <select name="jurusan" id="jurusan" class="form-select">
+                 <select name="jurusan" id="jurusan" class="form-select" placeholder="Masukkan Jurusan Anda" required>
                     <?php
                     // menampilkan isi array kedalam combobox
                     foreach($daftarJurusan as $dj) {
@@ -178,12 +182,12 @@
             </div>
             <div class="col-md-5">
                 <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
-                <input type="date" name="tanggalLahir" id="tanggalLahir" class="form-control">
+                <input type="date" name="tanggalLahir" id="tanggalLahir" class="form-control" required>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="mataKuliah" class="form-label">Mata Kuliah</label>
-                <select name="mataKuliah" id="mataKuliah" class="form-select">
+                <select name="mataKuliah" id="mataKuliah" class="form-select" >
                     <?php
                     // menampilkan isi array kedalam combobox
                     foreach($daftarMataKuliah as $dmk) {
@@ -194,7 +198,7 @@
             </div>
             <div class="col-md-5">
                 <label for="agama" class="form-label">Agama</label>
-                <select name="agama" id="agama" class="form-select">
+                <select name="agama" id="agama" class="form-select" required>
                     <?php
                     // menampilkan isi array kedalam combobox
                     foreach($daftarAgama as $da) {
@@ -206,7 +210,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <label for="nilai" class="form-label">Nilai</label>
-                <input type="text" name="nilai" id="nilai" class="form-control">
+                <input type="text" name="nilai" id="nilai" class="form-control" placeholder="Masukkan Nilai Anda" required>
             </div>
             <div class="mb-3">
                     <button type="submit" class="col-md-3 btn btn-primary" name="btnSimpan" id="btnSimpan">Simpan</button>
@@ -216,15 +220,15 @@
         <br>
         <div class="container">
             <h4>Daftar Mahasiswa</h4>
-            <table class="table table-bordered">
+            <table class="table table-striped">
                 <thead class="table-primary">
                     <tr>
                         <td>NIM</td>
-                        <td>NAMA</td>
-                        <td>JENIS KELAMIN</td>
-                        <td>JURUSAN</td>
-                        <td>MATAKULIAH</td>
-                        <td>NILAI</td>
+                        <td>Nama</td>
+                        <td>Jenis Kelamin</td>
+                        <td>Jurusan</td>
+                        <td>Mata Kuliah</td>
+                        <td>Nilai</td>
                         <td>NH</td>
                         <td>KET</td>
                     </tr>
