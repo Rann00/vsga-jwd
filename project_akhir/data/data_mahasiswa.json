@@ -18,5 +18,15 @@
         "nilai": "91",
         "nilaiMutu": "B",
         "lulus": "Lulus"
+    },
+    {
+        "nim": "2159201043",
+        "nama": "Bara",
+        "jenisKelamin": "Laki-Laki",
+        "jurusan": "Sistem dan Teknologi Informasi",
+        "mataKuliah": "Metodologi Penelitian",
+        "nilai": "86",
+        "nilaiMutu": "B",
+        "lulus": "Lulus"
     }
 ]
