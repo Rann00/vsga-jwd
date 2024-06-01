@@ -11,3 +11,18 @@ Proyek ini adalah aplikasi sederhana untuk mengelola data mahasiswa. Aplikasi in
 - HTML
 - CSS (Bootstrap)
 - PHP
+
+
+## Struktur Direktori
+| Direktori/File              | Deskripsi                                  |
+|-----------------------------|--------------------------------------------|
+| `css/`                      | Direktori untuk menyimpan file CSS         |
+| `css/bootstrap.css`         | File CSS dari Bootstrap                    |
+| `img/`                      | Direktori untuk menyimpan file gambar      |
+| `img/logo umko.png`         | Gambar logo UMKO                           |
+| `js/`                       | Direktori untuk menyimpan file JavaScript  |
+| `js/bootstrap.js`           | File JavaScript dari Bootstrap             |
+| `data/`                     | Direktori untuk menyimpan file data JSON   |
+| `data/data_mahasiswa.json`  | File JSON untuk menyimpan data mahasiswa   |
+| `index.php`                 | File PHP utama untuk aplikasi              |
+
