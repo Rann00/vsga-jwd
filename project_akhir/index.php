@@ -1,8 +1,8 @@
 <?php
-    $daftarJenisKelamin = array("Laki-Laki", "Perempuan");
-    $daftarAgama = array("Islam", "Hindu", "Buddha", "Kristen", "Konghucu");
-    $daftarJurusan = array("Sistem dan Teknologi Informasi", "Pendidikan Matematika", "Ilmu Komunikasi", "Pendidikan Jasmani, Olahraga dan Kesehatan", "Pendidikan Ilmu Bahasa Inggris", "Informatika Medis", "Agribisnis", "Agroteknologi", "Hukum","Pendidikan Bahasa dan Sastra Indonesia");
-    $daftarMataKuliah = array("Metodologi Penelitian", "Pemrograman Web", "Bahasa Indonesia", "Design Grafis", "Voli", "Aljabar Linear", "Vocabulary", "X-Ray", "Teknologi Agribisnis", "Technopreneurship", "Penulisan Jurnal Karya Ilmiah", "Pemrograman Game", "Sistem Pakar", );
+    $daftarJenisKelamin = array("Pilih Jenis Kelamin Anda", "Laki-Laki", "Perempuan");
+    $daftarAgama = array("Pilih Agama Anda", "Islam", "Hindu", "Buddha", "Kristen", "Konghucu");
+    $daftarJurusan = array("Pilih Jurusan Anda", "Sistem dan Teknologi Informasi", "Pendidikan Matematika", "Ilmu Komunikasi", "Pendidikan Jasmani, Olahraga dan Kesehatan", "Pendidikan Ilmu Bahasa Inggris", "Informatika Medis", "Agribisnis", "Agroteknologi", "Hukum","Pendidikan Bahasa dan Sastra Indonesia");
+    $daftarMataKuliah = array("Pilih Mata Kuliah", "Metodologi Penelitian", "Pemrograman Web", "Bahasa Indonesia", "Design Grafis", "Voli", "Aljabar Linear", "Vocabulary", "X-Ray", "Teknologi Agribisnis", "Technopreneurship", "Penulisan Jurnal Karya Ilmiah", "Pemrograman Game", "Sistem Pakar", );
 
     // mengambil data file json
     $fileDataMahasiswa = "data/data_mahasiswa.json";
@@ -77,6 +77,7 @@
     <title>Tugas Akhir VSGA G5 - JWD C</title>
 
     <!-- Memanggil CSS Bootstrap-->
+    <link rel="icon" href="img/logo umko.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <style>
